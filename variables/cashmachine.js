@@ -29,8 +29,8 @@ let amountToWithdraw = 90; // number
 // accountBalance = accountBalance + amountToWithdraw // long hand
 
 // console.log(accountBalance -= amountToWithdraw);
-//         //      100        -    90          =   10
-// console.log(accountBalance -= amountToWithdraw);
+        //      100        -    90          =   10
+// console.log(accountBalance - amountToWithdraw);
 //         //      10        -    90          =   -80
 // console.log(accountBalance -= amountToWithdraw);
 // // accountBalance = accountBalance - amountToWithdraw

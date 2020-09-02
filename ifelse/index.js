@@ -26,51 +26,147 @@ let age = 53;
 // let info = `${name} ${phone}`
 // let info = name + phone
 // console.log(info)
-console.log(age, weather)
-if (age < 55 && weather == "sunny") {
-    // console.log(age, weather)
-    console.log("You are allowed in.")
+// console.log(age, weather)
+// if (age < 55 && weather == "sunny") {
+//     // console.log(age, weather)
+//     console.log("You are allowed in.")
+// }
+// else if (age < 55 || weather == "sunny") {
+//     // console.log(age, weather)
+//     console.log("You are also allowed in.")
+// }
+// else {
+//     // console.log(age, weather)
+//     console.log("You are not allowed in.")
+// }
+
+
+
+// with a switch case, we need a couple of things
+//* key = variable that you are checking the value of.
+//* case = conditions that you want to compare...
+//* default = else statement
+dayOfTheWeek = "Sunday";
+// switch (dayOfTheWeek) {
+//     case "Monday":
+//     case "Tuesday":
+//     case "Wednesday":
+//     case "Thursday":
+//     case "Friday":
+//         console.log(`It is ${dayOfTheWeek}, so I have set your alarm.`)
+//         break;
+//     case "Saturday":
+//     case "Sunday":
+//         console.log(`It is ${dayOfTheWeek}, so I have not set your alarm.`)
+//         break;
+//     default:
+//         console.log("I don't know what you mean.")
+//         break;
+// }
+// shift alt down
+
+// TODO: create an age calculator - 
+//? age variable...
+//* below 18, no service
+//* below 40, full price
+//* below 60, 25% off the price
+//* below 80, 50% off the price
+//* below 100, 100% off the price
+//* anything else... don't serve... 
+
+let color = "orange"
+
+switch (color) {
+    case "purple":
+        console.log(`I am ${color}. Meh, that's okay`);
+        break; // this ends the switch case.
+    case "green":
+        console.log(`I am ${color}. Bad choice.`);
+        break;
+    case "orange":
+        console.log(`I am ${color}. Good choice.`);
+        break;
+    default:
+        console.log("Pick a color.")
+        break;
 }
-else if (age < 55 || weather == "sunny") {
-    // console.log(age, weather)
-    console.log("You are also allowed in.")
+
+// if (color == "purple") {
+//     console.log(`I am ${color}. Meh choice.`);
+//     // do something
+// } else if (color == "blue") {
+//     console.log(`I am ${color}. Poor choice.`);
+//     // do something
+// } else if (color == "yellow") {
+//     console.log(`I am ${color}. Bad choice.`);
+//     // do something
+// } else if (color == "green") {
+//     console.log(`I am ${color}. Rubbish choice.`);
+//     // do something
+// } else if (color == "pink") {
+//     console.log(`I am ${color}. Argh choice.`);
+//     // do something
+// } else if (color == "orange") {
+//     console.log(`I am ${color}. Good choice.`);
+//     // do something
+// }
+// else {
+//     console.log("Meh.")
+// }
+
+
+// TODO: Switch case this bad boy. :)
+let car = "Peugeot";
+if (car == "Ford" || car == "GM") {
+    console.log("You've got an American car!");
+} else if (car == "Peugeot" || car == "Citroen") {
+    console.log("You've got a French boy!");
+} else if (car == "Honda" || car == "Toyota" || car == "Suzuki") {
+    console.log("Japanese cars are dead quiet!");
+} else if (car == "Mercedes") {
+    console.log("You are proper posh German!");
+} else if (car == "Volkswagen") {
+    console.log("German aren't that bad at all!");
+} else if (car == "Hyundai" || car == "Kia") {
+    console.log("South Korean cars are getting popular!");
+} else {
+    console.log("Your car is not in the top ten companies in the world!");
+}
+
+
+
+
+if (dayOfTheWeek == "Monday") {
+    // do something
+    console.log("Alarm")
+}
+else if (dayOfTheWeek == "Tuesday") {
+    // do something
+    console.log("Alarm")
+}
+else if (dayOfTheWeek == "Wednesday") {
+    // do something
+    console.log("Alarm")
+}
+else if (dayOfTheWeek == "Thursday") {
+    // do something
+    console.log("Alarm")
+}
+else if (dayOfTheWeek == "Friday") {
+    // do something
+    console.log("Alarm")
+}
+else if (dayOfTheWeek == "Saturday") {
+    // do something
+    console.log("No alarm")
+}
+else if (dayOfTheWeek == "Sunday") {
+    console.log("No alarm")
+    // do something
 }
 else {
-    // console.log(age, weather)
-    console.log("You are not allowed in.")
+    console.log("I don't know what you mean.")
 }
-
-
-
-
-// if (dayOfTheWeek == "Monday") {
-//     // do something
-//     console.log("Alarm")
-// }
-// else if (dayOfTheWeek == "Tuesday") {
-//     // do something
-//     console.log("Alarm")
-// }
-// else if (dayOfTheWeek == "Wednesday") {
-//     // do something
-//     console.log("Alarm")
-// }
-// else if (dayOfTheWeek == "Thursday") {
-//     // do something
-//     console.log("Alarm")
-// }
-// else if (dayOfTheWeek == "Friday") {
-//     // do something
-//     console.log("Alarm")
-// }
-// else if (dayOfTheWeek == "Saturday") {
-//     // do something
-//     console.log("No alarm")
-// }
-// else if (dayOfTheWeek == "Sunday") {
-//     console.log("No alarm")
-//     // do something
-// }
 
 // let name = "David"
 // if (condition1) {
