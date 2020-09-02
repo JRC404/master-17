@@ -10,7 +10,6 @@ let currentLocation;
 let vehicle;
 let virusCarriers;
 
-
 const startingLocation = "Home";
-const EndLocation = "Home";
-console.log(startingLocation)
+const EndLocation = "Work";
+console.log(EndLocation)

@@ -6,7 +6,7 @@
 //* variable: storage places for our code
 //* storing a value to use it again later on...
 
-// let myName // string variable
+// let myName; // string variable
 let myName = "Jacob Reilly-Cooper"; // declaration & definition
 // myName = "Jacob Reilly-Cooper"; // defining the variable
 // variable = vary - change it...
@@ -34,7 +34,8 @@ console.table(hobbies)
 
 
 // **********************************
-// console.log("My car is a " + car + ". Do you like it?"); // logs the variable myName to the console
+console.log("My car is a " + car + ". Do you like it?"); // logs the variable myName to the console
+console.log(`My car is a ${car}. Do you like it?`);
 // string iterpolation
 
 // TODO: create four variables with your details OR made up details
@@ -67,16 +68,18 @@ dinner = "pasta";
 //console.log(`For breakfast I had ${breakfast}, for lunch I had ${lunch} and for dinner, I am having ${dinner}.`);
 
 let shoppingList = ["pasta", "cereal", "protein", "columbian cheese", "milk"];
+// [] () {}
+
 // console.table(shoppingList[0])
 // console.table(shoppingList[1])
-shoppingList.shift()
-shoppingList.unshift("goats milk", "headphones")
+shoppingList.shift() // removes the first element
+shoppingList.unshift("goats milk", "headphones") // inserts an element or elements to the start of an array
 console.table(shoppingList)
 
 // TODO: please use the three methods below on your lists
-//* push
-//* pop
-//* splice
+//* push - adds an element at the end
+//* pop - removes an element off of the end
+//* splice - takes out a selection of values from a specifc index
 
 // TODO: a little bit extra... 
 //* slice
@@ -86,7 +89,7 @@ console.table(shoppingList)
 let favouriteFilms = ["Shrek", "Toy Story", "Star Wars"];
 favouriteFilms.push("Lord of the Rings", "Harry Potter", "Matrix")
 favouriteFilms.pop()
-favouriteFilms.splice(0,1)
+favouriteFilms.splice(0,4)
 let newFilms = favouriteFilms.slice()
 console.table(newFilms)
 favouriteFilms.shift() // take from the front
