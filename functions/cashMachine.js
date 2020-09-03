@@ -12,11 +12,11 @@ let amount = 100;
 // console.log(`You have £${userBalance} left.`)
 
 
-// const cashWithdrawl = (accountNumber, amount) => {
-//     userBalance -= amount
-//     console.log(`You have withdrawn £${amount} from ${accountNumber}`);
-//     console.log(`You have £${userBalance} left.`)
-// }
+const cashWithdrawl = (accountNumber, amount) => {
+    userBalance -= amount
+    console.log(`You have withdrawn £${amount} from ${accountNumber}`);
+    console.log(`You have £${userBalance} left.`)
+}
 
 // // console.log(test)
 // cashWithdrawl(1234567, 100)

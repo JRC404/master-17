@@ -135,39 +135,34 @@ if (car == "Ford" || car == "GM") {
 
 
 
-
-if (dayOfTheWeek == "Monday") {
-    // do something
-    console.log("Alarm")
-}
-else if (dayOfTheWeek == "Tuesday") {
-    // do something
-    console.log("Alarm")
-}
-else if (dayOfTheWeek == "Wednesday") {
-    // do something
-    console.log("Alarm")
-}
-else if (dayOfTheWeek == "Thursday") {
-    // do something
-    console.log("Alarm")
-}
-else if (dayOfTheWeek == "Friday") {
-    // do something
-    console.log("Alarm")
-}
-else if (dayOfTheWeek == "Saturday") {
-    // do something
-    console.log("No alarm")
-}
-else if (dayOfTheWeek == "Sunday") {
-    console.log("No alarm")
-    // do something
-}
-else {
-    console.log("I don't know what you mean.")
+function dayOfTheWeekCheck(dayOfTheWeek) {
+    if (dayOfTheWeek == "Monday") {
+        // do something
+        console.log("Alarm")
+    } else if (dayOfTheWeek == "Tuesday") {
+        // do something
+        console.log("Alarm")
+    } else if (dayOfTheWeek == "Wednesday") {
+        // do something
+        console.log("Alarm")
+    } else if (dayOfTheWeek == "Thursday") {
+        // do something
+        console.log("Alarm")
+    } else if (dayOfTheWeek == "Friday") {
+        // do something
+        console.log("Alarm")
+    } else if (dayOfTheWeek == "Saturday") {
+        // do something
+        console.log("No alarm")
+    } else if (dayOfTheWeek == "Sunday") {
+        console.log("No alarm")
+        // do something
+    } else {
+        console.log("I don't know what you mean.")
+    }
 }
 
+dayOfTheWeekCheck("Sunday")
 // let name = "David"
 // if (condition1) {
 //     // do something
