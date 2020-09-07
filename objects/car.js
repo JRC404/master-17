@@ -8,6 +8,9 @@ const car = {
     FuelType: 'Petrol',
     drive() {
         console.log('vroom');
+    },
+    park() {
+        console.log('beep beep, I am locked.');
     }
 }
 
