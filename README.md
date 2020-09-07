@@ -2,4 +2,8 @@
 
 Topics covered:
 
-* Variables
+* dotnotation
+* variables
+* if statements && Switch cases
+* functions
+* objects
