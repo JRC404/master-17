@@ -4,7 +4,7 @@ Styles elements in a way that we choose. It works on a last-read, first implemen
 
 Three different ways of using CSS
 
-1. Inline styling - this is the devil. The devil.
+1. Inline styling - this is the devil. The devil. But easy to implement, so, sometimes, you can get away with it. But you shouldn't do it.
 2. Internal styling - this is like, well, a cousin that you see at Christmas
 3. External styling - this is the bee's knees
 
@@ -40,7 +40,7 @@ Three different ways of using CSS
 </body>
 ```
 
-3. External styling - which is a css file located outside of the html file. 
+3. External styling - which is a css file located outside of the html file. Allowing multiple files to be styled with the same code. A lot easier than the other two implementation styles.
 ```html
 <head>
     <link rel="stylesheet" href="style.css">
@@ -57,7 +57,7 @@ p {
 ```
 
 ## classes
-Class selector - it can be applied to multiple parts of the page, and is widely used when wanting to style particular areas.
+Class selector - it can be applied to multiple parts of the page, and is widely used when wanting to style particular areas. 
 ```html
 <!-- single class -->
 <p class="large">Hello, I am large.</p>
@@ -99,5 +99,30 @@ Class selector - it can be applied to multiple parts of the page, and is widely 
 ## Tips
 
 * When you're styling CSS, style top to bottom. Navigation bar all the way to the footer. Structure your file in the way you style.
+
+* Keep your structure consisten. E.g:
+```css
+/* THIS IS GOOD. */
+body {
+    color: red;
+    font-size: 100px;
+}
+
+h1 {
+    color: pink;
+    font-size: 50px;
+}
+
+/* THIS IS MEH */
+body {
+    color: red;
+    font-size: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    color: pink;
+}
+```
 
 * embedding fonts - take the URL, add to the top of your css file and then add the font-family to the body {} - best way
