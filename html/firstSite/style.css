@@ -14,6 +14,13 @@ body {
     color: rgba(81, 87, 77, 1);
 }
 
+.navigationBar {
+    background-color: tomato;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
 
 .navigationBar li {
     list-style: none;
