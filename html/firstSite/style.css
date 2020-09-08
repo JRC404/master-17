@@ -72,6 +72,9 @@ ul {
         width: 50%;
         float: left;
     }
+    .three-columns h2 {
+        color: pink;
+    }
 }
 
 
