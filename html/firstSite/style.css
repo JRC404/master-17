@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+
+
+body {
+    /* font-family: 'Long Cang', cursive; */
+        /* property : value*/
+    margin: 0;
+    padding: 0;
+    color: green;
+}
+
+* {
+    /* capture all... */
+}
+
+.limegreen-paragraph {
+    color: limegreen;
+}
+
+.large-paragraph {
+    font-size: 250px;
+}
+
+.small-paragraph {
+    font-size: 50px;
+}
+
+.center-paragraph {
+    text-align: center;
+}
+
+h1 {
+}
+
+h2 {
+    color: purple;
+    /* text-decoration: underline; to come back to */
+    /* font-size: 1000px; */
+}
+
+p {
+    color: orange;
+}
+
+
+
+
+footer {
+    text-align: center;
+}
