@@ -59,21 +59,30 @@ p {
 ## classes
 Class selector - it can be applied to multiple parts of the page, and is widely used when wanting to style particular areas.
 ```html
+<!-- single class -->
 <p class="large">Hello, I am large.</p>
+<p class="red">Hello, I am red.</p>
+<!-- multiple classes -->
+<p class="large red">Hello, I am large && red.</p>
 ```
 ```css
 .large {
     font-size: 500px;
 }
+
+.red {
+    color: red;
+}
 ```
 
 ## box model
+```html
+<div class="box">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque veniam placeat harum totam asperiores tempore et labore a quo voluptas.</p>
+</div>
+```
 1. content - what we would like in the box.
 2. padding - area around the content. Padding is transparent.
-3. border - border goes around the padding, which goes around the content.
-4. margin - clear an area outside of the border. Margin is transparent.
-
-2. padding: 
 ```css
 .box {
     padding: 25px; /* 25px of padding, for the top, the right, the bottom and the left */
@@ -82,6 +91,10 @@ Class selector - it can be applied to multiple parts of the page, and is widely 
     padding: 25px 20px 15px 10px; /* top is 25px, right is 20px, bottom is 15px && left is 10px */
 }
 ```
+3. border - border goes around the padding, which goes around the content.
+4. margin - clear an area outside of the border. Margin is transparent.
+
+
 
 ## Tips
 
