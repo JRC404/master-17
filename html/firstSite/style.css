@@ -6,11 +6,18 @@ body {
         /* property : value*/
     margin: 0;
     padding: 0;
-    color: green;
+    /* color: green; */
 }
 
 * {
     /* capture all... */
+    color: rgba(81, 87, 77, 1);
+}
+
+
+.navigationBar li {
+    list-style: none;
+    display: inline;
 }
 
 .limegreen-paragraph {
@@ -29,22 +36,47 @@ body {
     text-align: center;
 }
 
-h1 {
+.box {
+    width: 95.9%;
+    padding: 25px 20px 15px 10px;
+    border: 20px solid limegreen;
+    margin: 0;
+    background-color: aqua;
 }
+
+#paragraph1 {
+    color: green;
+}
+
+
 
 h2 {
     color: purple;
     /* text-decoration: underline; to come back to */
     /* font-size: 1000px; */
 }
-
+/* 
 p {
     color: orange;
+} */
+
+ul {
+    list-style: square;
+}
+
+@media (min-width: 600px) {
+    /* body {
+        background-color: yellow;
+    } */
+    .three-columns {
+        width: 50%;
+        float: left;
+    }
 }
 
 
-
-
 footer {
+    position: absolute;
+    bottom: 0;
     text-align: center;
 }

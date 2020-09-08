@@ -56,6 +56,33 @@ p {
 }
 ```
 
+## classes
+Class selector - it can be applied to multiple parts of the page, and is widely used when wanting to style particular areas.
+```html
+<p class="large">Hello, I am large.</p>
+```
+```css
+.large {
+    font-size: 500px;
+}
+```
+
+## box model
+1. content - what we would like in the box.
+2. padding - area around the content. Padding is transparent.
+3. border - border goes around the padding, which goes around the content.
+4. margin - clear an area outside of the border. Margin is transparent.
+
+2. padding: 
+```css
+.box {
+    padding: 25px; /* 25px of padding, for the top, the right, the bottom and the left */
+    padding: 25px 20px; /* top && bottom are 25px, right && left are 20px */
+    padding: 25px 20px 15px; /* top is 25px, right && left are 20px, bottom is 15px; */
+    padding: 25px 20px 15px 10px; /* top is 25px, right is 20px, bottom is 15px && left is 10px */
+}
+```
+
 ## Tips
 
 * When you're styling CSS, style top to bottom. Navigation bar all the way to the footer. Structure your file in the way you style.
