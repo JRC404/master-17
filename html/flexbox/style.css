@@ -4,17 +4,26 @@
 
 .container {
     display: flex;
-    min-height: 50vh;
-    /* flex-wrap: nowrap; default value */
+    /* justify-content: center; */
+    /* min-height: 100vh; */
+    border: 15px solid magenta;
+    height: 100vh;
     flex-wrap: wrap;
+    align-content: stretch;
+    /* align-items: flex-end; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; default value */
+    /* flex-wrap: nowrap; default value */
     /* flex-direction: row; default value */
-    flex-direction: column;
+    /* align-items: stretch; default value */
+    /* align-content: stretch; default value */
 }
 
 .box {
-    width: 33%;
+    /* width: 33.33%; */
+    flex: 1;
     color: white;
-    font-size: 100px;
+    font-size: 350px;
     text-align: center;
     padding: 15px;
 }
@@ -24,22 +33,31 @@
 
 .box1 {
     background-color: tomato;
+    /* align-self: flex-end; */
+    /* font-size: 50px; */
     order: 0;
 }
 
 .box2 {
     background-color: blue;
+    /* align-self: baseline; */
+    /* padding-bottom: 125px; */
+    /* font-size: 125px; */
     order: 0;
 }
 
 .box3 {
     background-color: teal;
+    /* align-self: center; */
+    /* padding-top: 100px; */
+    /* font-size: 200px; */
     order: 0;
 }
 
 .box4 {
     background-color: purple;
-    order: 4;
+    /* flex: 4; */
+    /* order: 4; */
 }
 
 .box5 {
@@ -54,17 +72,18 @@
 
 .box7 {
     background-color: orange;
-    order: 3;
+    /* flex: 3; */
+    /* order: 3; */
 }
 
 .box8 {
     background-color: yellow;
-    order: 3;
+    /* order: 3; */
 }
 
 .box9 {
     background-color: gray;
-    order: 3;
+    /* order: 3; */
 }
 
 .box10 {
