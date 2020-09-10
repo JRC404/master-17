@@ -27,35 +27,35 @@ const shelly = new Bunny("Shelly", "Female")
 
 //* object - date and functions (methods when they are inside of objects && classes)
 
-class Person {
-    constructor(name, dateOfBirth, eyeColor, nose, ears) { // anything that hasn't been defined yet
-        this.name = name;
-        this.dateOfBirth = dateOfBirth;
-        this.eyeColor = eyeColor;
-        this.nose = nose;
-        this.ears = ears;
-        this.macbookWorking = true;
-        this.punchJacob = true;
-        this.hungerLevel = 100;
-        this.thirstLevel = 100;
-    }
-    increaseEars() {
-        this.ears++
-    }
-    stopPunchingJacob() {
-        this.punchJacob = false;
-    }
-    eat() {
-        this.hungerLevel -= 20;
-    }
-    drink() {
-        this.thirstLevel -= 20;
-    }
-    train() {
-        this.hungerLevel += 20;
-        this.thirstLevel += 20;
-    }
-}
+// class Person {
+//     constructor(name, dateOfBirth, eyeColor, nose, ears) { // anything that hasn't been defined yet
+//         this.name = name;
+//         this.dateOfBirth = dateOfBirth;
+//         this.eyeColor = eyeColor;
+//         this.nose = nose;
+//         this.ears = ears;
+//         this.macbookWorking = true;
+//         this.punchJacob = true;
+//         this.hungerLevel = 100;
+//         this.thirstLevel = 100;
+//     }
+//     increaseEars() {
+//         this.ears++
+//     }
+//     stopPunchingJacob() {
+//         this.punchJacob = false;
+//     }
+//     eat() {
+//         this.hungerLevel -= 20;
+//     }
+//     drink() {
+//         this.thirstLevel -= 20;
+//     }
+//     train() {
+//         this.hungerLevel += 20;
+//         this.thirstLevel += 20;
+//     }
+// }
 
 // TODO: Let’s create a class called Cars for a car parking company.
 
