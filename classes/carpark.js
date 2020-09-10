@@ -12,6 +12,12 @@
 
 // TODO: Given a staff member parked for 5 hours as before, show how much it will be charged and remaining balance.
 
+// TODO: EXTENSION: 
+
+// TODO: Weekends and overnight could be charged differently. If you park on a weekend, you receive a different charge. 
+
+// TODO: All day parking: if you stay for 8 hours or more, you get a fixed rate 
+
 
 
 class Car {
