@@ -57,14 +57,6 @@ const shelly = new Bunny("Shelly", "Female")
 //     }
 // }
 
-// TODO: Let’s create a class called Cars for a car parking company.
-
-// TODO: This will allow you to store information of: car registration number, number of hours parked and total amount charged. (Say £6.50 per hour?)
-
-// TODO The first car entered the car park, parked for 5 hours and ready to pay. Display this information so the driver can pay for his/her parking fee.
-
-
-
 
 const david = new Person("David", "01.01.2003", "lime green", true, 2);
 const diwa = new Person("Diwa", "01.01.2003", "tomato", true, 2);
