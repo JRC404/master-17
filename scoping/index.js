@@ -33,20 +33,36 @@
 // ReferenceError: name is not defined
 // Scope chain does not allow name to be searched for inside of functions.
 
-const myFirstFunction = () => {
-    let firstName = "Ian"
-    console.log(firstName);
-    // console.log(secondName);
+// const myFirstFunction = () => {
+//     let firstName = "Ian"
+//     console.log(firstName);
+//     // console.log(secondName);
+// }
+
+// const mySecondFunction = () => {
+//     let secondName = "Davenport";
+//     console.log(secondName);
+// }
+
+// const callThemBoth = () => {
+//     myFirstFunction()
+//     mySecondFunction()
+// }
+
+// callThemBoth()
+
+let stringNew = "let string";
+var stringOld = "var string";
+
+const myFunction = () => {
+    let stringNew = "new let string";
+    var stringOld = "old var string";
+
+    console.log(`Inside function ${stringNew}`);
+    console.log(`Inside function ${stringOld}`);
 }
 
-const mySecondFunction = () => {
-    let secondName = "Davenport";
-    console.log(secondName);
-}
+myFunction();
 
-const callThemBoth = () => {
-    myFirstFunction()
-    mySecondFunction()
-}
-
-callThemBoth()
+console.log(`Outside function ${stringNew}`);
+console.log(`Outside function ${stringOld}`);
