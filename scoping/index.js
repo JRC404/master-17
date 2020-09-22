@@ -4,12 +4,19 @@
 
 // let name = "Dave"; // global variable / global scoped variable
 
-const sayHello = () => {
-    let name = "Johnny"; // function scoped variable
-    // function scoped variables only exist inside of that function... unless returned, obvs.
-    // does name exist inside this function?
-    console.log(`Hello, ${name}`);
-}
+// let name = "Izzy";
+// const sayHello = () => {
+//     let name = "Johnny"; 
+//     console.log(`Hello, ${name}`);
+// }
+
+// const sayGoodBye = (name) => { // declaring name
+//     // name = "Dave";
+//     console.log(`Goodbye, ${name}`)
+// }
+
+// sayHello();
+// sayGoodBye(name);
 
 // const sayGoodBye = (name) => {
 //     let name = "Dave";
@@ -18,14 +25,28 @@ const sayHello = () => {
 // sayGoodBye("Raymond");
 // SyntaxError: Identifier 'name' has already been declared
 
+// function scoped variable
+// function scoped variables only exist inside of that function... unless returned, obvs.
+// does name exist inside this function?
+
 // console.log(name) // error, Jonny || Dave, Ummm
 // ReferenceError: name is not defined
 // Scope chain does not allow name to be searched for inside of functions.
 
-const sayGoodBye = (name) => {
-    let name = "Dave";
-    console.log(`Goodbye, ${name}`)
+const myFirstFunction = () => {
+    let firstName = "Ian"
+    console.log(firstName);
+    // console.log(secondName);
 }
 
-sayHello();
-sayGoodBye("Raymond");
+const mySecondFunction = () => {
+    let secondName = "Davenport";
+    console.log(secondName);
+}
+
+const callThemBoth = () => {
+    myFirstFunction()
+    mySecondFunction()
+}
+
+callThemBoth()
