@@ -51,18 +51,38 @@
 
 // callThemBoth()
 
-let stringNew = "let string";
-var stringOld = "var string";
+// let stringNew = "let string";
+// var stringOld = "var string";
 
-const myFunction = () => {
-    let stringNew = "new let string";
-    var stringOld = "old var string";
+// const myFunction = () => {
+//     let stringNew = "new let string";
+//     var stringOld = "old var string";
 
-    console.log(`Inside function ${stringNew}`);
-    console.log(`Inside function ${stringOld}`);
+//     console.log(`Inside function ${stringNew}`);
+//     console.log(`Inside function ${stringOld}`);
+// }
+
+// myFunction();
+
+// console.log(`Outside function ${stringNew}`);
+// console.log(`Outside function ${stringOld}`);
+
+function myLet() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+        // block scope starts and stops inside of the block with let
+    }
+    // console.log(i) // this line?
 }
 
-myFunction();
-
-console.log(`Outside function ${stringNew}`);
-console.log(`Outside function ${stringOld}`);
+function myVar() {
+    for (var i = 0; i < 5; i++) {
+        console.log(i);
+        // block scope doesn't really apply to var, the rebel.
+    }
+    console.log(i) // this line?
+}
+console.log("let");
+myLet();
+console.log("var");
+myVar();
