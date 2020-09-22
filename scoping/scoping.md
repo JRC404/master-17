@@ -1,6 +1,6 @@
 # Scoping, the joys
 
-1. What is the output for sayHello() && sayGoodbye() in the code below?
+1. What is the output for **sayHello()** && **sayGoodbye()** in the code below?
 
 ```javascript
 let name = "Dave"; // global variable / global scoped variable

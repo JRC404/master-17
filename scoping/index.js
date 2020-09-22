@@ -2,6 +2,8 @@
 // why we use let over var
 // Q & A
 
+//* Introduction
+
 // let name = "Dave"; // global variable / global scoped variable
 
 // let name = "Izzy";
@@ -33,6 +35,8 @@
 // ReferenceError: name is not defined
 // Scope chain does not allow name to be searched for inside of functions.
 
+//* calling functions as normal
+
 // const myFirstFunction = () => {
 //     let firstName = "Ian"
 //     console.log(firstName);
@@ -51,6 +55,8 @@
 
 // callThemBoth()
 
+//* no difference to start with with let && var
+
 // let stringNew = "let string";
 // var stringOld = "var string";
 
@@ -67,6 +73,7 @@
 // console.log(`Outside function ${stringNew}`);
 // console.log(`Outside function ${stringOld}`);
 
+// * Oh boy, something has changed...
 function myLet() {
     for (let i = 0; i < 5; i++) {
         console.log(i);
