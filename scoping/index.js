@@ -74,22 +74,49 @@
 // console.log(`Outside function ${stringOld}`);
 
 // * Oh boy, something has changed...
+// function myLet() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//         // block scope starts and stops inside of the block with let
+//     }
+//     // console.log(i) // errors out
+// }
+
+// function myVar() {
+//     for (var i = 0; i < 5; i++) {
+//         console.log(i);
+//         // block scope doesn't really apply to var, the rebel.
+//     }
+//     console.log(i) // 5
+// }
+// console.log("let");
+// myLet();
+// console.log("var");
+// myVar();
+
 function myLet() {
     for (let i = 0; i < 5; i++) {
-        console.log(i);
+        if(true) {
+            let color = "purple";
+            // console.log(i, color);
+        }
         // block scope starts and stops inside of the block with let
     }
-    // console.log(i) // this line?
+    // console.log(i, color) // i is not defined. Color isn't touched but is also undefined
 }
 
 function myVar() {
     for (var i = 0; i < 5; i++) {
-        console.log(i);
+        if(true) { // if lightOn == true
+            var color = "orange";
+            console.log(i, color);
+        }
         // block scope doesn't really apply to var, the rebel.
     }
-    console.log(i) // this line?
+    console.log(i, color) // 5
 }
-console.log("let");
-myLet();
+// console.log("let");
+// myLet();
 console.log("var");
 myVar();
+
