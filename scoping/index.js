@@ -11,13 +11,21 @@ const sayHello = () => {
     console.log(`Hello, ${name}`);
 }
 
-const sayGoodBye = () => {
+// const sayGoodBye = (name) => {
+//     let name = "Dave";
+//     console.log(`Goodbye, ${name}`)
+// }
+// sayGoodBye("Raymond");
+// SyntaxError: Identifier 'name' has already been declared
+
+// console.log(name) // error, Jonny || Dave, Ummm
+// ReferenceError: name is not defined
+// Scope chain does not allow name to be searched for inside of functions.
+
+const sayGoodBye = (name) => {
     let name = "Dave";
     console.log(`Goodbye, ${name}`)
 }
 
-console.log(name) // error, Jonny || Dave, Ummm
-// ReferenceError: name is not defined
-// Scope chain does not allow name to be searched for inside of functions.
 sayHello();
-sayGoodBye();
+sayGoodBye("Raymond");
