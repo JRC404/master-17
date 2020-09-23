@@ -38,12 +38,12 @@ const createPost = (post) => {
 
 // getPosts() // shows three blog posts
 // createPost({ title: 'Blog Four' }) // UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch().
-createPost({ title: 'Blog Four' }).then(getPosts).catch( (err) => {
-    console.log(err)
-})
-createPost({title: 'Blog Five'}).then(getPosts).catch((err) => {
-    console.log(err);
-});
+// createPost({ title: 'Blog Four' }).then(getPosts).catch( (err) => {
+//     console.log(err)
+// })
+// createPost({title: 'Blog Five'}).then(getPosts).catch((err) => {
+//     console.log(err);
+// });
 //? if the createPost function is successful in delivering its promise, then run the getPosts method (resolve). If it is unsuccessful in delivering its promise, run the error... (rejection)
 
 // createPost({ title: 'Blog Five' }).then(getPosts).catch( (e) => {
