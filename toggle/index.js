@@ -2,14 +2,12 @@ let lightOn = true;
 
 const lightSwitch = () => {
     if (lightOn) {
-        console.log("Light is on.")
         lightOn = false;
-    }
-    else {
-        console.log("Light is off.")
+    } else {
         lightOn = true;
     }
 }
+
 
 lightSwitch()
 lightSwitch()
@@ -19,9 +17,16 @@ let playerOne = true;
 
 const playerSwitch = () => {
     // if playerOne {
-        // target the playerOne text content
+    // target the playerOne text content
     //}
     // else  {
-        // target the playerTwo text content
+    // target the playerTwo text content
     //}
+}
+const playerOneFunction = () => {
+    console.log("Player One has played.")
+}
+
+const playerTwoFunction = () => {
+    console.log("Player Two has played.")
 }
