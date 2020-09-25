@@ -62,3 +62,7 @@ describe("freddy instance tests", () => {
         expect(app.freddy.name).toBeDefined();
     })
 })
+
+describe("brian instance tests", () => {
+    
+})
