@@ -4,15 +4,22 @@ class Rabbit {
         this.health = health;
         this.hunger = hunger;
         this.strength = 25;
+        this.eligibleToFight = true;
     }
     increaseHealth() {
         this.health++;
+    }
+    decreaseHealth() {
+        this.health--;
     }
     decreaseHunger() {
         this.hunger--;
     }
     train() {
         this.strength += 5;
+    }
+    takeaway() {
+        this.strength -= 5;
     }
 }
 
