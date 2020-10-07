@@ -1,18 +1,14 @@
 const express = require('express');
 
 const app = express();
+const weather = require('./lib/getWeather');
 
-// mywebsite.com/
-// mywebsite.com/contact
-
-app.get('/', (req, res) => {
-    res.send('<h1>Hello world!</h1>');
+app.get('/', async (req, res) => {
+    let data = await weather();
+    console.log(data);
+    res.send(data);
 });
 
-app.get('/contact', (req, res) => {
-    res.send('Contact page');
-});
-
-app.listen(3000, ()=>{
+app.listen(3001, () =>{
     console.log('Server listening on port 3000');
 });
