@@ -1,5 +1,6 @@
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const hbs = require('express-handlebars');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const express = require('express');
@@ -12,6 +13,13 @@ mongoose.connect('mongodb+srv://dean:Password123abc@cluster0.j1kc2.mongodb.net/s
 });
 
 const app = express();
+
+app.engine('.hbs', hbs({
+    defaultLayout: 'layout',
+    extname: '.hbs'
+}));
+
+app.set('view engine', '.hbs');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
