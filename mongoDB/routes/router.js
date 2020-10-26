@@ -4,6 +4,10 @@ const router = require('express').Router();
 const UserModel = require('../models/userModel');
 const {checkSignedIn} = require('../controllers/auth');
 
+router.get('/', (req, res) => {
+    res.render('index');
+});
+
 router.get('/users', async(req, res)=> {
     const users = await UserModel.find({});
     res.send(users);
@@ -62,6 +66,12 @@ router.post('/login', async(req, res) => {
 
 router.get('/protected-route', checkSignedIn, (req, res) => {
     res.send('profile page');
+});
+
+router.get('/logout', (req, res) => {
+    req.session.destroy();
+
+    res.send('your sessoin has ended');
 });
 
 module.exports = router;

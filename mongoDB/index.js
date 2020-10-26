@@ -5,6 +5,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const express = require('express');
 
+const SessionModel = require('./models/sessionModel');
 const router = require('./routes/router');
 
 mongoose.connect('mongodb+srv://dean:Password123abc@cluster0.j1kc2.mongodb.net/signup?retryWrites=true&w=majority', {
@@ -35,6 +36,14 @@ app.use(session({
         sameSite: true
     }
 }));
+
+app.use(async (req, res, next) => {
+    let loggedIn = await SessionModel.checkSession(req.session.userID);
+
+    res.locals.loggedIn = loggedIn;
+
+    return next();
+});
 
 app.use('/', router);
 
