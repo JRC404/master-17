@@ -7,5 +7,5 @@ exports.checkSignedIn = async (req, res, next) => {
         return;
     }
 
-    res.send('you must be logged in to access this page');
+    res.render('login', {err: 'you must be logged in to access this page'});
 }
